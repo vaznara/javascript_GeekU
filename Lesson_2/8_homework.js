@@ -1,8 +1,10 @@
 function power(val, pow) {
-    var result = val * val;
-    if(pow > 0) {
-        power(result, pow - 1);
-        return result;
+
+    if(pow === 0) {
+        return 1;
+    } else {
+
+        return val * power(val, pow - 1);
     }
 }
 
