@@ -9,7 +9,7 @@ function getObject(num) {
     var numStr = num.toString().split('').reverse();
 
         numObject = {
-            hundreds: isNaN(+numStr[2]) ? '' : +numStr[2],
+            hundreds: numStr[2] ? '' : +numStr[2],
             tens: isNaN(+numStr[1]) ? '' : +numStr[1],
             digits: isNaN(+numStr[0]) ? '' : +numStr[0],
         }
